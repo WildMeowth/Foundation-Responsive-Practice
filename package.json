@@ -1,0 +1,20 @@
+{
+  "name": "l",
+  "version": "1.0.0",
+  "description": "",
+  "main": "01.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "formidable": "^1.1.1",
+    "gm": "^1.23.0"
+  },
+  "devDependencies": {
+    "express-session": "^1.15.0",
+    "gm": "^1.23.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

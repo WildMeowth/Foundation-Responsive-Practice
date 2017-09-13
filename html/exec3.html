@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Foundation 实例</title>
+        <link rel="stylesheet" href="https://cdn.bootcss.com/foundation/5.5.3/css/foundation.min.css">
+        <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.bootcss.com/foundation/5.5.3/js/foundation.min.js"></script>
+        <script src="https://cdn.bootcss.com/foundation/5.5.3/js/vendor/modernizr.js"></script>
+    </head>
+<body>
+
+<div style="padding:20px;">
+  <h2>下拉菜单按钮</h2>
+  <a href="#" data-dropdown="id01" class="button dropdown">Dropdown Button</a>
+  <ul id="id01" data-dropdown-content class="f-dropdown">
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+  </ul>
+</div>
+
+
+<div style="padding:20px;">
+  <h2>分割按钮</h2>
+  <button class="button split">Split Button <span data-dropdown="id01"></span></button>
+  <ul id="id01" data-dropdown-content class="f-dropdown">
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+  </ul>
+</div>
+
+
+<!-- 初始化 Foundation JS -->
+<script>
+$(document).ready(function() {
+    $(document).foundation();
+})
+</script>
+
+</body>
+</html>

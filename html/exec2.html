@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Foundation 实例</title>
+        <link rel="stylesheet" href="https://cdn.bootcss.com/foundation/5.5.3/css/foundation.min.css">
+        <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.bootcss.com/foundation/5.5.3/js/foundation.min.js"></script>
+        <script src="https://cdn.bootcss.com/foundation/5.5.3/js/vendor/modernizr.js"></script>
+    </head>
+    <style>
+    .tabs-content > .content.active {
+        -webkit-animation: fadeEffect 1s;
+        animation: fadeEffect 1s;
+    }
+
+    @-webkit-keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    </style>
+<body style="padding:20px;">
+
+
+<div class="row">
+  <h2>价格表</h2>
+  <div class="medium-4 columns">
+    <ul class="pricing-table">
+      <li class="title">Basic</li>
+      <li class="price">$19.99</li>
+      <li class="description">Great for small business</li>
+      <li class="bullet-item">24/7 Support</li>
+      <li class="bullet-item">15GB Storage</li>
+      <li class="bullet-item">1GB Bandwidth</li>
+      <li class="cta-button"><a class="a button" href="#">Sign Up</a></li>
+    </ul>
+  </div>
+    <div class="medium-4 columns">
+    <ul class="pricing-table">
+      <li class="title">Basic</li>
+      <li class="price">$19.99</li>
+      <li class="description">Great for small business</li>
+      <li class="bullet-item">24/7 Support</li>
+      <li class="bullet-item">15GB Storage</li>
+      <li class="bullet-item">1GB Bandwidth</li>
+      <li class="cta-button"><a class="a button" href="#">Sign Up</a></li>
+    </ul>
+  </div>
+    <div class="medium-4 columns">
+    <ul class="pricing-table">
+      <li class="title">Basic</li>
+      <li class="price">$19.99</li>
+      <li class="description">Great for small business</li>
+      <li class="bullet-item">24/7 Support</li>
+      <li class="bullet-item">15GB Storage</li>
+      <li class="bullet-item">1GB Bandwidth</li>
+      <li class="cta-button"><a class="a button" href="#">Sign Up</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+<ul class="breadcrumbs">
+  <li><a href="#">Home</a></li>
+  <li class="current"><a href="#">Private</a></li>
+  <li class="unavailable"><a href="#">Picture</a></li>
+  <li>Vacation</li>
+</ul>
+
+
+
+<div class="pagination-centered">
+  <ul class="pagination">
+    <li class="arrow"><a href="#">&laquo;</a></li>
+    <li class="current"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li class="arrow"><a href="#">&raquo;</a></li>
+  </ul>
+</div>
+
+<!--<ul class="tabs vertical" data-tab>
+  <li class="tab-title"><a href="#">Home</a></li>
+  <li class="tab-title active"><a href="#">Menu 1</a></li>
+  <li class="tab-title"><a href="#">Menu 2</a></li>
+  <li class="tab-title"><a href="#">Menu 3</a></li>
+</ul>-->
+<ul class="tabs" data-tab>
+  <li class="tab-title"><a href="#home">Home</a></li>
+  <li class="tab-title"><a href="#menu1">Menu 1</a></li>
+  <li class="tab-title"><a href="#menu2">Menu 2</a></li>
+  <li class="tab-title"><a href="#menu3">Menu 3</a></li>
+</ul>
+<div class="tabs-content">
+  <div class="content" id="home">
+    <h3>HOME</h3>
+    <p>Home is where the heart is..</p>
+  </div>
+  <div class="content" id="menu1">
+    <h3>Menu 1</h3>
+    <p>Some text, blabla</p>
+  </div>
+  <div class="content" id="menu2">
+    <h3>Menu 2</h3>
+    <p>Some other text.</p>
+  </div>
+  <div class="content" id="menu3">
+    <h3>Menu 3</h3>
+    <p>Last tab.</p>
+  </div>
+</div>
+
+
+
+
+<h2>可折叠实例</h2>
+<ul class="accordion" data-accordion>
+  <li class="accordion-navigation">
+    <a href="#demo">简单的可折叠实例</a>
+    <div id="demo" class="content">
+      菜鸟教程 -- 学的不仅是技术，更是梦想！！！
+    </div>
+  </li>
+  <li class="accordion-navigation">
+    <a href="#demo1">简单的可折叠实例1</a>
+    <div id="demo1" class="content">
+      菜鸟教程 -- 学的不仅是技术，更是梦想！！！
+    </div>
+  </li>
+</ul>
+
+
+
+
+
+
+<div style="padding:20px;">
+  <h2>基本进度条</h2>
+  <div class="progress round">
+    <span id="jindu" class="meter" style="width:0%"></span>
+  </div>
+</div>
+
+
+
+
+<div style="padding:20px;">
+  <h2>提醒框</h2>
+  <div data-alert class="alert-box">
+    This is a default alert box.
+    <a href="#" class="close">&times;</a>
+  </div>
+
+  <div data-alert class="alert-box secondary">
+    This is a secondary alert box.
+    <a href="#" class="close">&times;</a>
+  </div>
+
+  <div data-alert class="alert-box success radius">
+    <strong>Success!</strong> This alert box indicates a successful or positive action.
+    <a href="#" class="close">&times;</a>
+  </div>
+
+  <div data-alert class="alert-box info round">
+    <strong>Info!</strong> This alert box indicates a neutral informative change or action.
+    <a href="#" class="close">&times;</a>
+  </div>
+
+  <div data-alert class="alert-box warning">
+    <strong>Warning!</strong> This alert box indicates a warning that might need attention.
+    <a href="#" class="close">&times;</a>
+  </div>
+
+  <div data-alert class="alert-box alert">
+    <strong>Alert!</strong> This alert box indicates a dangerous or potentially negative action.
+    <a href="#" class="close">&times;</a>
+  </div>
+</div>
+
+
+
+
+<h2>响应式表格</h2>
+<p>在 div 元素上添加 overflow-x:auto 样式，让它支持响应式。</p>
+<p>重置浏览器窗口查看效果 (如果空间不足会出现垂直滚动条)。</p>
+<div class="responsive">
+<table>
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Email</th>
+      <th>City</th>
+      <th>Age</th>
+      <th>Country</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>john@example.com</td>
+      <td>New York</td>
+      <td>35</td>
+      <td>USA</td>
+    </tr>
+    <tr>
+      <td>Mary</td>
+      <td>Moe</td>
+      <td>mary@example.com</td>
+      <td>Chicago</td>
+      <td>51</td>
+      <td>USA</td>
+    </tr>
+    <tr>
+      <td>July</td>
+      <td>Dooley</td>
+      <td>july@example.com</td>
+      <td>San Francisco</td>
+      <td>38</td>
+      <td>USA</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $(document).foundation();
+        var num;
+        var interval = window.setInterval(function(){
+            num = lengthChange();
+            if(num==0){
+                clearInterval(interval);
+            }
+        },1000); 
+    });
+    function lengthChange() {
+        var sty = $("#jindu").attr("style");
+        var len = +(sty.split(":")[1].split("%")[0]);
+        // console.log(len);
+        if(len<100){
+            len++;
+            sty="width:"+len+"%";
+            $("#jindu").attr("style",sty);
+            return 1;
+        }
+        if(len==100){
+            return 0;
+        }
+        // $("#jindu").attr("style","width:0%");
+        
+    }
+</script>
+
+
+</body>
+</html>
